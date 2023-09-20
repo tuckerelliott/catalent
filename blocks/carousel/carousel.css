@@ -5,13 +5,10 @@ main .carousel-container {
 main .carousel {
   display: flex;
   scroll-snap-type: x mandatory;
-  overflow-x: scroll;
+  overflow: scroll hidden;
   scroll-behavior: smooth;
-  /* max-width: 1680px; */
+  max-width: 1680px;
   margin: auto;
-  background-color: black;
-  color: white;
-  text-align: center;
 }
 
 main .carousel picture {
@@ -36,7 +33,7 @@ main .carousel > div {
   flex-shrink: 0;
   scroll-snap-align: start;
   position: relative;
-  min-height: 400px;
+  min-height: 580px;
   align-items: flex-end;
   display: flex;
 }
@@ -44,10 +41,8 @@ main .carousel > div {
 main .carousel div.carousel-text {
   max-width: 1200px;
   margin: 0 auto;
-  /* background-color: white; */
-  font-family: var(--body-font-family);
-  font-size: 25px;
-  min-height: 80px;
+  background-color: white;
+  min-height: 188px;
   padding: 0 28px;
 }
 
