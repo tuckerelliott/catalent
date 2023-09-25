@@ -3,17 +3,24 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   grid-gap: 16px;
 }
 
 .cards > ul > li {
-  border: 1px solid var(--highlight-background-color);
+  border: 0px solid var(--highlight-background-color);
   background-color: var(--background-color)
 }
 
 .cards .cards-card-body {
   margin: 16px;
+  line-height: 1.4;
+  font-size: 16px;
+  text-align: center;
+  padding: 16px 8px 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #016ba9;
 }
 
 .cards .cards-card-image {
@@ -26,6 +33,6 @@
 
 .cards > ul > li img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+ /* aspect-ratio: 4 / 3; */
   object-fit: cover;
 }

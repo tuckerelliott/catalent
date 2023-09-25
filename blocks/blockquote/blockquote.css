@@ -1,0 +1,40 @@
+.blockquote {
+    /* background-color: var(--overlay-background-color); */
+    background-color: #330066!important;
+    color: white;
+    padding: 1em;
+  }
+  
+  .blockquote blockquote {
+    margin: 0;
+    text-indent: 0;
+    padding: 0 32px;
+    font-style: normal;
+  }
+  
+  .blockquote blockquote::after {
+    border-bottom: 2px solid var(--heading-highlight-color);
+    content: '';
+    display: block;
+    width: 80px;
+    position: relative;
+    top: 0.25em;
+  }
+  
+  .blockquote > p {
+    margin: 10px 0 0 10px;
+  }
+
+  .blockquote blockquote * a:any-link {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .blockquote blockquote * p, .blockquote blockquote * div {
+    font-size: 17px;
+    text-align: center;
+    border: none;
+    margin: 0;
+    line-height: 1.5;
+    font-style: normal;
+  }

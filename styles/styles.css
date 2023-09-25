@@ -10,9 +10,15 @@
  * governing permissions and limitations under the License.
  */
 
+ @font-face {
+  font-family: "Hind",Helvetica,Arial,sans-serif;
+  src: url('https://assets.qualified.com/packs/media/fonts/inter/Inter-roman.var-ba4caefcdf5b36b438db92786991c845.woff2') format('woff2');
+  }
+
+
  :root {
   /* colors */
-  --link-color: #035fe6;
+  --link-color: #261C02;
   --link-hover-color: #136ff6;
   --background-color: #fff;
   --overlay-background-color: #eee;
@@ -20,12 +26,12 @@
   --text-color: #000;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback;
+  --body-font-family: "Hind",Helvetica,Arial,sans-serif;
   --heading-font-family: var(--body-font-family);
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
   /* body sizes */
-  --body-font-size-m: 22px;
+  --body-font-size-m: 14px;
   --body-font-size-s: 18px;
   --body-font-size-xs: 16px;
 
@@ -52,11 +58,11 @@
 
 @media (min-width: 900px) {
   :root {
-    --heading-font-size-xxl: 60px;
+    --heading-font-size-xxl: 28px;
     --heading-font-size-xl: 48px;
     --heading-font-size-l: 36px;
     --heading-font-size-m: 30px;
-    --heading-font-size-s: 24px;
+    --heading-font-size-s: 16px;
     --heading-font-size-xs: 22px;
   }
 }
@@ -96,6 +102,9 @@ h4 { font-size: var(--heading-font-size-m) }
 h5 { font-size: var(--heading-font-size-s) }
 h6 { font-size: var(--heading-font-size-xs) }
 
+h1 {
+ color:#016BA9;
+}
 p, dl, ol, ul, pre, blockquote {
   margin-top: 1em;
   margin-bottom: 1em;
@@ -157,7 +166,7 @@ a.button:any-link, button {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  border-radius: 30px;
+  /* border-radius: 30px; */
 }
 
 a.button:hover, a.button:focus, button:hover, button:focus  {

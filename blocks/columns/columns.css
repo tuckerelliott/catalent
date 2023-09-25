@@ -21,7 +21,7 @@
 
 @media (min-width: 900px) {
   .columns > div {
-    align-items: center;
+   /* align-items: center; */
     flex-direction: unset;
     gap: 32px;
   }
@@ -30,4 +30,25 @@
     flex: 1;
     order: unset;
   }
+}
+
+/* buttons */
+.columns * a.button:any-link, button {
+  font-family: var(--body-font-family);
+  display: contents;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: 2px solid transparent;
+  padding: 5px 30px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  cursor: pointer;
+  color: #000;
+  background-color: var(--link-color);
+  margin: 16px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* border-radius: 30px; */
 }
