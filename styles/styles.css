@@ -11,8 +11,8 @@
  */
 
  @font-face {
-  font-family: "Hind",Helvetica,Arial,sans-serif;
-  src: url('https://assets.qualified.com/packs/media/fonts/inter/Inter-roman.var-ba4caefcdf5b36b438db92786991c845.woff2') format('woff2');
+  font-family: "Hind";
+  src: url("https://assets.qualified.com/packs/media/fonts/inter/Inter-roman.var-ba4caefcdf5b36b438db92786991c845.woff2") format('woff2');
   }
 
 
@@ -23,7 +23,7 @@
   --background-color: #fff;
   --overlay-background-color: #eee;
   --highlight-background-color: #ccc;
-  --text-color: #000;
+  --text-color: #0069A9;
 
   /* fonts */
   --body-font-family: "Hind",Helvetica,Arial,sans-serif;
@@ -39,7 +39,7 @@
   --heading-font-size-xxl: 48px;
   --heading-font-size-xl: 40px;
   --heading-font-size-l: 32px;
-  --heading-font-size-m: 24px;
+  --heading-font-size-m: 10px;
   --heading-font-size-s: 20px;
   --heading-font-size-xs: 18px;
 
@@ -61,7 +61,7 @@
     --heading-font-size-xxl: 28px;
     --heading-font-size-xl: 48px;
     --heading-font-size-l: 36px;
-    --heading-font-size-m: 30px;
+    --heading-font-size-m: 14px;
     --heading-font-size-s: 16px;
     --heading-font-size-xs: 22px;
   }
@@ -85,14 +85,23 @@ header {
   height: var(--nav-height);
 }
 
-h1, h2, h3,
-h4, h5, h6 {
+h1, h2, h3, h5, h6 {
   font-family: var(--heading-font-family);
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.25;
   margin-top: 1em;
   margin-bottom: .5em;
   scroll-margin: calc(var(--nav-height) + 1em);
+}
+
+h4 {
+  font-family: var(--heading-font-family);
+  font-weight: 600;
+  line-height: 4.7em;
+  margin-top: 1em;
+  margin-bottom: .5em;
+  scroll-margin: calc(var(--nav-height) + 1em);
+  text-align: center;
 }
 
 h1 { font-size: var(--heading-font-size-xxl) }
@@ -108,6 +117,7 @@ h1 {
 p, dl, ol, ul, pre, blockquote {
   margin-top: 1em;
   margin-bottom: 1em;
+  text-align: left;
 }
 
 hr {
@@ -161,7 +171,7 @@ a.button:any-link, button {
   font-weight: 600;
   cursor: pointer;
   color: var(--background-color);
-  background-color: var(--link-color);
+  background-color: #0069A9;
   margin: 16px 0;
   white-space: nowrap;
   overflow: hidden;

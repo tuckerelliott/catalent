@@ -40,7 +40,7 @@ main .carousel > div {
 
 main .carousel div.carousel-text {
   max-width: 800px;
-  margin: 0 auto;
+ /* margin: 0 auto; */
   /* background-color: white; */
   min-height: 300px;
   padding: 0 58px;
@@ -50,6 +50,8 @@ main .carousel div.carousel-text {
 main .carousel div.carousel-text p {
   margin: 10px 0 16px;
   line-height: 1.2;
+  font-size: 17px;
+  font-weight: 500;
 }
 
 main .carousel div.carousel-text h2 {

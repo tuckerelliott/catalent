@@ -1,8 +1,12 @@
+main .blockquote-wrapper {
+  max-width: unset!important;
+}
+
 .blockquote {
     /* background-color: var(--overlay-background-color); */
     background-color: #330066!important;
     color: white;
-    padding: 1em;
+    padding: 30px;
   }
   
   .blockquote blockquote {
@@ -10,6 +14,7 @@
     text-indent: 0;
     padding: 0 32px;
     font-style: normal;
+    text-align: center;
   }
   
   .blockquote blockquote::after {
